@@ -1,0 +1,4 @@
+configs/kvm/config.json /opt/getmobit/gm-sidebar/side-link/kvm
+configs/hooks/kvm_init_hook.py /usr/bin
+configs/icons/* /opt/getmobit/share/icons/kvm
+configs/gmbox-kvm-dbus.service /lib/systemd/system

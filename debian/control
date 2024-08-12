@@ -1,0 +1,13 @@
+Source: gmbox-kvm-dbus
+Section: non-free/devel
+Priority: optional
+Maintainer: Andrew Zhabkin <azhabkin@getmobit.ru>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Homepage: https://git.dev.getmobit.ru/system0/gmbox-kvm-dbus
+
+Package: gmbox-kvm-dbus
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: gmbox kvm dbus  daemon application
+ This app allows to users switch motherboards and terminate session

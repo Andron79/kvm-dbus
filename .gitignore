@@ -1,0 +1,12 @@
+*.autosave
+*.stash
+*.log
+*.pro.user*
+*.Debug
+*.Release
+build/*
+*~
+*.orig
+.idea
+VERSION
+build

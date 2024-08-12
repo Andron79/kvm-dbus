@@ -1,0 +1,5 @@
+gmbox-kvm-dbus (0.4.0.dev1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Andrew Zhabkin <azhabkin@getmobit.ru>  Mon, 26 Jun 2023 10:27:31 +0000

@@ -1,0 +1,25 @@
+---
+include:
+    - project: system0/pipelines
+      ref: master
+      file: package-build-ubuntu.yml
+    - project: devops/ci-templates
+      ref: DI-303
+      file: auto-bumpversion.yml
+    - project: system0/pipelines
+      ref: master
+      file: python-build.yml
+
+variables:
+    DOCKER_IMAGE_NAME: system/xenial-builder
+    DOCKER_IMAGE_VERSION: 0.2.0
+    LD_LIBRARY_PATH: ""
+
+stages:
+    - post-merge
+    - code-analysis
+    - dependency-analysis
+    - unit-test
+    - build
+    - test
+    - upload

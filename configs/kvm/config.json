@@ -1,0 +1,9 @@
+{
+    "name": "gmbox-kvm",
+    "update_hook": "/usr/bin/kvm_init_hook.py",
+    "init_hook": "/usr/bin/kvm_init_hook.py",
+    "path": "/",
+    "interface": "org.getmobit.kvm",
+    "signal_name": "lockedChanged",
+    "service": "org.getmobit.kvm"
+}

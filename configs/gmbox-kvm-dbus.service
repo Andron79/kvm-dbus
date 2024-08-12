@@ -1,0 +1,17 @@
+[Unit]
+Description=Gmbox KVM D-Bus
+After=syslog.target gmbox-kvm-switcher-daemon.service
+Before=lightdm.service
+
+[Service]
+Type=dbus
+Environment=PYTHONUNBUFFERED=1
+Restart=always
+RestartSec=1
+ExecStart=/bin/bash -c gmbox-kvm-dbus
+StandardOutput=null
+StandardError=null
+BusName=org.getmobit.kvm
+
+[Install]
+WantedBy=default.target
